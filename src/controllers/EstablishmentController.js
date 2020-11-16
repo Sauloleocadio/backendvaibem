@@ -20,7 +20,6 @@ class EstablishmentController {
       telephone,
     });
 
-    req.io.emit("newEstablishment", establishment);
     return res.json(establishment);
   }
 
@@ -39,7 +38,6 @@ class EstablishmentController {
       { new: true }
     );
 
-    req.io.emit("changeEstablishment", establishment);
     return res.json(establishment);
   }
 
