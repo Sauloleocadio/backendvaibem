@@ -47,7 +47,7 @@ class EstablishmentController {
     const { id } = req.body;
 
     await Establishment.findByIdAndDelete({ _id: id });
-    return res.json({ message: "Usuário deletado" });
+    return res.json({ message: "Estabelecimento deletado com sucesso!" });
   }
 }
 
